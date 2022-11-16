@@ -10,8 +10,7 @@ signUpForm.addEventListener('submit', async (e) => {
     const data = new FormData(signUpForm);
     const email = data.get('email');
     const user = await signupUser(email, data.get('password'));
-    // Redirect to /other-page on successful auth
-    // Redirect to /other-page when page loads if user is authenticated
+
     if (user) {
         location.replace('/other-page');
     }
