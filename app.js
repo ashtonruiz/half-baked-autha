@@ -17,7 +17,7 @@ signUpForm.addEventListener('submit', async (e) => {
     }
 });
 
-signInUser.addEventListener('submit', async (e) => {
+signInForm.addEventListener('submit', async (e) => {
     e.preventDefault();
     const data = new FormData(signInForm);
     const email = data.get('email');
